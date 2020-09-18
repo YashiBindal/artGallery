@@ -1,0 +1,248 @@
+$primary:#cc9c65;
+$headFont:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+$text:#585858;
+$back:#D8D8D8;
+body{
+    background: black;
+}
+h1, h3, h4{
+    font-family: $headFont;
+    color:black;
+}
+h5,h6{
+    color:$text;
+}
+.wrapper{
+    display: grid;
+}
+.navbar{
+    background: white;
+}
+.navbar-brand{
+    font-weight: 600;
+    font-family:$headFont;
+}
+
+.nav-item{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.jumbotron{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url('61sS1zXb+KL._AC_SY355_.jpg');
+    background-position: center ;
+    background-size:cover;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -1rem;
+    .btn{
+        color:white;
+        border-radius:0px;
+        margin:10px;
+        align-items: center;
+    }
+
+    .display1{
+    font-weight: 600;
+    font-size:80px;
+    position: relative;
+    color:white;
+    }
+    p{
+        color:white;
+    }
+
+}
+.lead{
+    text-align: center;
+    position: relative;
+    width:700px;
+}
+.btn1{
+    border:4px solid white;            
+}
+.btn2{
+    color:white;
+    border: 4px solid $primary;
+    background: $primary;
+    border-radius: 0;
+} 
+
+.story{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap:30px;
+    padding: 70px 50px;
+    background:white;
+    .content{
+        padding:60px 0px;
+    }
+    h1{
+        padding:20px 0px;
+    }
+    p{
+        color:$text;
+    }
+    .story-img{
+        object-fit: cover;
+        width: 100%;
+        height:100%;
+    }
+}
+.limit-border{
+    height: 1px;
+    width:50px;
+    border-bottom: 4px solid $primary;
+}
+
+.jumbo-2{
+    background:$back;
+    padding:80px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1{
+        padding:30px 0px;
+    }
+    p{
+        color:$text;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+  
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    background: white;
+    padding:0;
+    overflow: hidden;
+    p{
+        width:250px;
+        color:$text;
+        text-align: center;
+    }
+    .item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.gallery{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial{
+    background:white;
+}
+.comments{
+    display:flex;
+    justify-content:start;
+    background:white;
+    align-items:flex-start;
+    padding-bottom:100px;
+    .stars{
+        color:$primary;
+        padding-bottom: 20px;
+    }
+    p{
+        color:$text;
+        text-align: start;
+    }
+    .review {
+        justify-content: start;
+        text-align: start;
+        position: relative;
+        padding:40px;
+    }   
+}
+.wrap{
+    background:$back;
+    display:grid;
+    grid-template-rows: 400px auto 300px;
+    justify-content: center;
+    align-items: center;
+    .header{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            padding:20px 0px;
+        }
+    }
+    .contain{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        width: 100%;
+        height: 100%;
+        padding:0px 70px;
+        img{
+            padding:0px 40px;
+        }
+        .events{
+            background:white;
+            justify-content: start;
+            text-align: start;
+            padding:20px 10px;
+            margin:0px 40px;
+            p{
+                color:$primary;
+            }
+        }
+    }
+    .view{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+// .forms{
+
+//       grid-gap:40px;
+//     background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+//     url('64df89a19d7387650bde8e7e80c85e05--oil-painting-landscapes-paintings-on-canvas.jpg') ;
+//     background-position: center ;
+//     background-size:cover;
+//     .form1{
+//         display:flex;
+//         flex-direction: column;
+//         color:white;
+//         background:black;
+//         justify-content: start;
+//         align-items: center;
+//         head{
+//             font-family: $headFont;
+//             padding-bottom: 20px;
+//         }
+//     }
+//     .form2{
+//         background:black;
+//     }
+//     .form-control{
+//         background:black;
+//     }
+
+// }
+
+.forms{
+    // display:grid;
+    // grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas:
+      ". .";
+}

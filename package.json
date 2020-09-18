@@ -1,0 +1,15 @@
+{
+  "name": "webpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss":  "sass --watch webpage.scss webpage.css"
+  },
+  "author": "yashi",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.26.11"
+  }
+}
